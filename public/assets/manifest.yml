@@ -3,10 +3,12 @@ willowmap_black.png: willowmap_black-b95a844615c8494e5bbf91829e7ded56.png
 willowmap_black/index.png: willowmap_black-b95a844615c8494e5bbf91829e7ded56.png
 willowmap_white.png: willowmap_white-d75e8a4fba908d1c9e66449f79b1c1eb.png
 willowmap_white/index.png: willowmap_white-d75e8a4fba908d1c9e66449f79b1c1eb.png
-application.js: application-97fb6956ec5773b5979e600b56e81f79.js
-application/index.js: application-97fb6956ec5773b5979e600b56e81f79.js
-application.css: application-a8d6e38b390e0c1b5798c6427bb4b2fa.css
-application/index.css: application-a8d6e38b390e0c1b5798c6427bb4b2fa.css
+willowmap_white2.png: willowmap_white2-d75e8a4fba908d1c9e66449f79b1c1eb.png
+willowmap_white2/index.png: willowmap_white2-d75e8a4fba908d1c9e66449f79b1c1eb.png
+application.js: application-770fe5755077bd5022e97daf1c747e09.js
+application/index.js: application-770fe5755077bd5022e97daf1c747e09.js
+application.css: application-37d0fb128071969b68d408217363667f.css
+application/index.css: application-37d0fb128071969b68d408217363667f.css
 glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings-white/index.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings.png: glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png
