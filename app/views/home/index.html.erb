@@ -1,16 +1,19 @@
+<%= stylesheet_link_tag 'gmaps4rails' %>
+
 <%= image_tag("willowmap_black.png", :alt => "Logo", :class => "header_image", :style => "margin-left: auto; margin-right: auto;") %>
 </br>
 
 <h4>Welcome to WillowMap</h4>
-<span>WillowMap is your Residence Journal</span></br>
+<span>WillowMap is a tool to record where you have lived and had significant life experiences.  </br>Come here to create timelines of your life and share them.</span></br></br>
 <span>Click the 'Add Location' button to add your first address to begin mapping your "</span><span style="font-weight: bold">W</span><span>here <span style="font-weight: bold">I</span><span style="font-weight: bold"> L</span><span>ived"</span><span style="font-weight: bold">low</span>
-</br>
+</br></br>
 <span>Please enter your addresses in the following format: Street, City, St, Zipcode</span>
 </br>
 </br>
 
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript" src="extensions-0.2.1.pack.js"></script>
 
- 
 <script type="text/javascript">
  
 $(document).ready(function(){
@@ -19,7 +22,7 @@ $(document).ready(function(){
  
     $("#addButton").click(function () {
  
-	if(counter>5){
+	if(counter>35){
             alert("WillowMap can only handle 35 locations at a time.  You must have moved a ton growning up!");
             return false;
 	}   
@@ -31,8 +34,7 @@ $(document).ready(function(){
 	      '<input type="text" name="textbox' + counter + 
 	      '" id="textbox' + counter + '" value="" >');
  
-	newTextBoxDiv.appendTo("#TextBoxesGroup");
- 
+	newTextBoxDiv.appendTo("#TextBoxesGroup"); 
  
 	counter++;
      });
@@ -50,24 +52,28 @@ $(document).ready(function(){
  
      $("#getButtonValue").click(function () {
  
-	var msg = '';
+    //grab the values that are input and place them in a variable
+	var addy = '';
 	for(i=1; i<counter; i++){
-   	  msg += "\n Textbox #" + i + " : " + $('#textbox' + i).val();
+   	  addy += "\n Textbox #" + i + " : " + $('#textbox' + i).val();
 	}
-    	  alert(msg);
+    	  alert(addy);
      });
   });
 </script>
-</head><body>
+
+<!-- </head><body> -->
  
 <div id='TextBoxesGroup'>
 	<div id="TextBoxDiv1">
 		
 	</div>
 </div>
+
 <input type='button' value='Add Location' id='addButton'>
 <input type='button' value='Remove Location' id='removeButton'>
-<input type='button' value='Get TextBox Value' id='getButtonValue'>
+<!-- this button is here for development purposes and will be removed-->
+<input type='button' value='Display Value(s)' id='getButtonValue'>    
  
-</body>
-</html>
+<!-- </body>
+</html> -->

@@ -1,4 +1,8 @@
 Willowmap::Application.routes.draw do
+  get "static_pages/index"
+
+  get "static_pages/map"
+
   authenticated :user do
     root :to => 'home#index'
   end

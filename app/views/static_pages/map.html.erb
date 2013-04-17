@@ -1,0 +1,20 @@
+<h1>StaticPages#map</h1>
+<p>Find me in app/views/static_pages/map.html.erb</p>
+
+
+<script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          //set the center of the map on the Tanner Building
+          center: new google.maps.LatLng(40.250655, -111.653044),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+ 
+    <div id="map-canvas"/>
+  
