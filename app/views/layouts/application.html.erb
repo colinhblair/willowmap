@@ -8,8 +8,8 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
-    <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?key=AIzaSyBD3OmBZTQPTvS1lFaCkvfgTUnzO_a8AS0&sensor=false' %>
-    <%= javascript_include_tag 'maploc' %>
+  <!--   <%= javascript_include_tag 'http://maps.googleapis.com/maps/api/js?key=AIzaSyBD3OmBZTQPTvS1lFaCkvfgTUnzO_a8AS0&sensor=false' %>
+    <%= javascript_include_tag 'maploc' %> -->
   </head>
   <body class="<%= controller_name %> <%= action_name %>">
     <div class="navbar navbar-fixed-top">
@@ -32,7 +32,6 @@
                 <div id="earth"></div>
           </div>
           <footer>
-              <%= yield :scripts %>
               <span style="float: right">&#169; 2013 Colin Blair</span>
           </footer>
         </div>
